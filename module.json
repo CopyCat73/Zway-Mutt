@@ -1,0 +1,52 @@
+{
+   "author" : "CopyCatz",
+   "category" : "automation_basic",
+   "defaults" : {
+      "description" : "__description__",
+      "title" : "__title__"
+   },
+   "dependencies" : [],
+   "homepage" : "https://github.com/CopyCat73",
+   "icon" : "icon.png",
+   "maturity" : "stable",
+   "moduleName" : "Mutt",
+   "options" : {
+      "fields" : {
+         "recipients" : {
+            "fields" : {
+               "item" : {
+                  "fields" : {
+                     "email" : {
+                        "label" : "__email__"
+                     }
+                  }
+               }
+            },
+            "label" : "__selectrecipients__",
+            "order" : 1
+         }
+      }
+   },
+   "repository" : {
+      "source" : "https://github.com/CopyCat73/Zway-Mutt",
+      "type" : "git"
+   },
+   "schema" : {
+      "properties" : {    
+         "recipients" : {
+            "items" : {
+               "properties" : {
+                  "email" : {
+                     "type" : "string",
+                     "required" : false
+                  }                 
+               },
+               "type" : "object"
+            },
+            "type" : "array"
+         }
+      }
+   },
+   "singleton" : true,
+   "version" : "1.00"
+}
